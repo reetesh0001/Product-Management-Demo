@@ -1,0 +1,36 @@
+<template>
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="product-card">
+        <h3 class="mb-4 text-center">${isNew ? 'Create New Product' : 'Edit Product'}</h3>
+
+        <form submit.delegate="save()">
+          <div class="form-floating mb-3">
+            <input type="text" id="name" class="form-control" placeholder="Product Name" value.bind="product.name" required>
+            <label for="name">Product Name</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" id="category" class="form-control" placeholder="Category" value.bind="product.category" required>
+            <label for="category">Category</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="number" id="price" step="0.01" class="form-control" placeholder="Price" value.bind="product.price" required>
+            <label for="price">Price</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <textarea id="description" class="form-control" placeholder="Description" style="height: 100px" value.bind="product.description"></textarea>
+            <label for="description">Description</label>
+          </div>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a route-href="route: product-list" class="btn btn-secondary me-md-2">Cancel</a>
+            <button type="submit" class="btn btn-success">Save Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

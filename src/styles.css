@@ -1,0 +1,112 @@
+/* This rule targets the entire page body */
+body {
+  /* Sets a light gray background color for the whole page */
+  background-color: grey;
+}
+
+/* This is a custom class for our main content containers (cards) */
+.product-card {
+  /* Sets the card's background to white */
+  background-color:  white;
+  /* Gives the card slightly rounded corners */
+  border-radius: 8px;
+  /* Adds a subtle shadow to make the card look like it's floating */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  /* Adds spacing inside the card, pushing content away from the edges */
+  padding: 1.5rem;
+  /* Adds space below each card */
+  margin-bottom: 1.5rem;
+  /* Prepares the card for a smooth animation on hover */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* This rule applies only when you move your mouse over a product-card */
+.product-card:hover {
+  /* Lifts the card up slightly to give a nice interactive feel */
+  transform: translateY(-5px);
+}
+
+/* This targets the product name (an h5 tag) inside the details section */
+.product-details h5 {
+  /* Adjusts the space below the product name */
+  margin-bottom: 0.5rem;
+  /* Sets the text color to a dark gray */
+  color: #333;
+}
+
+/* This targets the category text */
+.product-details .category {
+  /* Sets the text color to a lighter, muted gray */
+  color: #6c757d;
+  /* Makes the font a little smaller */
+  font-size: 0.9rem;
+  /* Adds space below the category */
+  margin-bottom: 1rem;
+}
+
+/* This targets the price text */
+.product-details .price {
+  /* Makes the price text larger */
+  font-size: 1.5rem;
+  /* Makes the price text bold */
+  font-weight: bold;
+  /* Sets the color to a distinct green */
+  color: #28a745;
+  /* Adds plenty of space below the price */
+  margin-bottom: 1.5rem;
+}
+
+/* This targets the container for our Edit and Delete buttons */
+.action-buttons a,
+.action-buttons button {
+  /* Adds a little space to the right of each button so they don't touch */
+  margin-right: 0.5rem;
+}
+/* Paste this entire block into style.css */
+
+.attractive-button {
+  /* Sizing and Spacing */
+  display: inline-block;
+  padding: 12px 24px;
+
+  /* Font and Text */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+
+  /* Appearance */
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+.attractive-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.attractive-button:active {
+  background-color: #004494;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+/* Styling for the top navigation bar */
+.navbar {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  color: white !important; /* Use !important to override default Bootstrap styles */
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
